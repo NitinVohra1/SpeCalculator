@@ -7,8 +7,7 @@ pipeline {
     stages {
         stage('Git Pull') {
             steps {
-                // Get code from a GitHub repository
-                // Make sure to add your own git url and credentialsId
+                // Get code from the GitHub repository
 				git url: 'https://github.com/NitinVohra1/SpeCalculator.git',
 				branch: 'main',
                 credentialsId: 'git'
